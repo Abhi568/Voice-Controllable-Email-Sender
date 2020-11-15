@@ -16,22 +16,20 @@ import webbrowser                        (For opening webbrowser and what is the
 
 import pyttsx3                           ((Text-to-Speech in Python (TTS) Using Pyttsx3, [pip install pyttsx3 ]) What ever you will write it will read  all your content)
 
-                                          engine = pyttsx3.init() (it  initializes the pyttsx3 package. The Instance of the initialized pyttsx3 package is stored in                                                       the engine variable. We are calling the variable engine as it works as the engine and converts Text-To-Speech whenever execute the                                               functions from the package.)
+engine = pyttsx3.init() (it  initializes the pyttsx3 package. The Instance of the initialized pyttsx3 package is stored in the engine variable. We are calling the variable engine as it works as the engine and converts Text-To-Speech whenever execute the functions from the package.)
                                            
-                                          (Say Function in pyttsx3)
-                                          engine.say("This is Text-To-Speech Engine Pyttsx3")
-                                          There is a built-in say() function in the pyttsx3 package that takes a string value and speaks it out.
+(Say Function in pyttsx3)
+engine.say("This is Text-To-Speech Engine Pyttsx3")
+There is a built-in say() function in the pyttsx3 package that takes a string value and speaks it out.
 
-                                           (runAndWait Function)
-                                           engine.runAndWait() (This function keeps track when the engine starts converting text to speech and waits for that much time, and do                                              not allow the engine to close. If we don’t write this code, it may happen that the engine might not work properly as the processes                                                will not be synchronized.)
+(runAndWait Function)
+ engine.runAndWait() (This function keeps track when the engine starts converting text to speech and waits for that much time, and do                                              not allow the engine to close. If we don’t write this code, it may happen that the engine might not work properly as the processes                                                will not be synchronized.)
 
-                                           After all the processes are over, we shut down the engine by calling stop() function.
+After all the processes are over, we shut down the engine by calling stop() function.
                                            
                                            
                                            
-                                           
-                                           
-   import speech_recognition             (There are many modules that can be used for speech recognition like google cloud speech, apiai, SpeechRecognition, watson-developer-                                            cloud, etc., but we are using Speech Recognition Module because it is easy to use since you don’t have to code scripts for accessing                                              audio devices also, it comes pre-packaged with many well-known API’s so you don’t have to signup for any kind of service which you                                                may have to while using any other module. And, it gets the job done pretty well.(https://www.codinground.com/speech-recognition/))
+ import speech_recognition             (There are many modules that can be used for speech recognition like google cloud speech, apiai, SpeechRecognition, watson-developer-                                            cloud, etc., but we are using Speech Recognition Module because it is easy to use since you don’t have to code scripts for accessing                                              audio devices also, it comes pre-packaged with many well-known API’s so you don’t have to signup for any kind of service which you                                                may have to while using any other module. And, it gets the job done pretty well.(https://www.codinground.com/speech-recognition/))
                                            
                                            
                                            
