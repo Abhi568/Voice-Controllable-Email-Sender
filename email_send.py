@@ -43,7 +43,7 @@ def send():
     else:
         m1=[]
     c=0
-    Corect_email="aj5563381@gmail.com"
+    Corect_email=Enter your email address (// "abc@gmail.com")
     pic,file1={},{}
     pic={'jpg':1,'png':1,'gif':1,'jpeg':1}
     file1={'pdf':1,'csv':1,'xps':1,'txt':1,'ppt':1,'docx':1,'py':1,'rar':1}
@@ -83,7 +83,7 @@ def send():
                         message.attach(image)
                 c=c+1
                 text = message.as_string()
-                obj1.login(Corect_email,"Abhi@1234")
+                obj1.login(Corect_email,Enter your password #example : "abh4555")
                 obj1.sendmail(e1,l[email1],text)
 
                 obj1.quit();
