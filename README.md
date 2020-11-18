@@ -1,6 +1,11 @@
 This document will describe how to run and what are the libraries are present in this project
 
 First refer to this vedio to get an idea how this project works (you can send audio,vedio, documents , pdf)
+
+ pic={'jpg':1,'png':1,'gif':1,'jpeg':1}
+ file1={'pdf':1,'csv':1,'xps':1,'txt':1,'ppt':1,'docx':1,'py':1,'rar':1,'mp4':1,'mp3':1}
+ 
+ This project supports these many extensions which you can send( it supports others extensions also , which you can explore) but i have used this because these are the common ones.
  
 https://drive.google.com/file/d/1TphM5RiIcWQbjkBwsax_K-SSq68_pEf-/view?usp=sharing
  
@@ -36,11 +41,14 @@ After all the processes are over, we shut down the engine by calling stop() func
                                            
  import speech_recognition             (There are many modules that can be used for speech recognition like google cloud speech, apiai, SpeechRecognition, watson-developer-                                            cloud, etc., but we are using Speech Recognition Module because it is easy to use since you don’t have to code scripts for accessing                                              audio devices also, it comes pre-packaged with many well-known API’s so you don’t have to signup for any kind of service which you                                                may have to while using any other module. And, it gets the job done pretty well.(https://www.codinground.com/speech-recognition/))
  
- When creating Message objects from scratch, you often need to encode the payloads for transport through compliant mail servers. This is especially true for image/* and text/* type messages containing binary data.
-
-The email package provides some convenient encoders in its encoders module. These encoders are actually used by the MIMEAudio and MIMEImage class constructors to provide default encodings. All encoder functions take exactly one argument, the message object to encode. They usually extract the payload, encode it, and reset the payload to this newly encoded value. They should also set the Content-Transfer-Encoding header as appropriate.
-
-Note that these functions are not meaningful for a multipart message. They must be applied to individual subparts instead, and will raise a TypeError if passed a message whose type is multipart.
+ from email import encoders
+from email.mime.base import MIMEBase   (When creating Message objects from scratch, you often need to encode the payloads for transport through compliant mail servers. This is                                          especially true for image/* and text/* type messages containing binary data.
+                                       The email package provides some convenient encoders in its encoders module. These encoders are actually used by the MIMEAudio and                                                MIMEImage class constructors to provide default encodings. All encoder functions take exactly one argument, the message object to encode.                                        They usually extract the payload, encode it, and reset the payload to this newly encoded value. They should also set the Content-Transfer-                                        Encoding header as appropriate.
+                                       Note that these functions are not meaningful for a multipart message. They must be applied to individual subparts instead, and will raise                                        a TypeError if passed a message whose type is multipart.
+                                       PAYLOAD: In general, the payload is the part of transmitted data that is the actual intended message. The payload excludes any headers or                                        metadata sent solely to facilitate payload delivery.
+                                       Base64 Decode and Encode, a simple online tool that does exactly what it says; decodes Base64 encoding and encodes into it quickly and                                            easily. Base64 encode your data in a hassle-free way, or decode it into human-readable format.
+                                       Base64 encoding schemes are commonly used when there is a need to encode binary data that needs be stored and transferred over media that                                        are designed to deal with textual data. This is to ensure that the data remains intact without modification during transport. Base64 is                                          used commonly in a number of applications including email via MIME, and storing complex data in XML or JSON.
+                                       
                                            
                                            
                                            
