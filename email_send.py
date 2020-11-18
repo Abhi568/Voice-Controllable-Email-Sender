@@ -46,7 +46,7 @@ def send():
     Corect_email=Enter your email address (// "abc@gmail.com")
     pic,file1={},{}
     pic={'jpg':1,'png':1,'gif':1,'jpeg':1}
-    file1={'pdf':1,'csv':1,'xps':1,'txt':1,'ppt':1,'docx':1,'py':1,'rar':1}
+    file1={'pdf':1,'csv':1,'xps':1,'txt':1,'ppt':1,'docx':1,'py':1,'rar':1,'mp4':1,'mp3':1}
     for email1 in range(len(l)):
         text=""
         if re.search(regex,e1) and re.search(regex,l[email1]) and len(m1)>0 and len(doc)>0 and len(subj.get())>0:
