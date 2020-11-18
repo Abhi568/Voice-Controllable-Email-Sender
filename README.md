@@ -1,5 +1,10 @@
 This document will describe how to run and what are the libraries are present in this project
 
+First refer to this vedio to get an idea how this project works (you can send audio,vedio, documents , pdf)
+ 
+https://drive.google.com/file/d/1TphM5RiIcWQbjkBwsax_K-SSq68_pEf-/view?usp=sharing
+ 
+
 import smtplib  as s                       (The smtplib module defines an SMTP client session object that can be used to send mail to any Internet machine with an SMTP or ESMTP                                              listener daemon.)
 
 Starttls                                   (Now, before invoking login, you invoke starttls. This causes the connection to become encrypted, which, in turn, protects your password                                            against being snooped)
@@ -30,6 +35,12 @@ After all the processes are over, we shut down the engine by calling stop() func
                                            
                                            
  import speech_recognition             (There are many modules that can be used for speech recognition like google cloud speech, apiai, SpeechRecognition, watson-developer-                                            cloud, etc., but we are using Speech Recognition Module because it is easy to use since you don’t have to code scripts for accessing                                              audio devices also, it comes pre-packaged with many well-known API’s so you don’t have to signup for any kind of service which you                                                may have to while using any other module. And, it gets the job done pretty well.(https://www.codinground.com/speech-recognition/))
+ 
+ When creating Message objects from scratch, you often need to encode the payloads for transport through compliant mail servers. This is especially true for image/* and text/* type messages containing binary data.
+
+The email package provides some convenient encoders in its encoders module. These encoders are actually used by the MIMEAudio and MIMEImage class constructors to provide default encodings. All encoder functions take exactly one argument, the message object to encode. They usually extract the payload, encode it, and reset the payload to this newly encoded value. They should also set the Content-Transfer-Encoding header as appropriate.
+
+Note that these functions are not meaningful for a multipart message. They must be applied to individual subparts instead, and will raise a TypeError if passed a message whose type is multipart.
                                            
                                            
                                            
