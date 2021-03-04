@@ -243,7 +243,7 @@ def Read(text):
 def Done_sender():
     #print(var1.get())
     store_all_data["sender email address"].append(var1.get())
-Done_sub=0
+
 def Done_subject():
     global Done_sub
     if Done_sub==0:
