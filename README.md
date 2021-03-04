@@ -22,7 +22,7 @@ from email.mime.image import MIMEImage   (For Sending the Images  )
 
 import re                                (for expression(example : Verification of email address(regex))
 
-import webbrowser                        (For opening webbrowser and what is the need of webbrowser because I have also given the documentation part in the program , there is a                                              button hyperlink or you can click on the speak button and speak "hyperlink" a window will get open atomatically in which all the                                                    libraries link are prsent , when you click at any link , documentation part of that libaray will get open in webbrowesr)
+import webbrowser                        (For opening webbrowser but what is the need of webbrowser because I have also given the documentation part in the program , there is a                                              button hyperlink or you can click on the speak button and speak , "hyperlink" that opens a window  automatically in which all the                                                    libraries link are present , when you click at any link , documentation part of that libaray will get open in webbrowesr)
 
 import pyttsx3                           ((Text-to-Speech in Python (TTS) Using Pyttsx3, [pip install pyttsx3 ]) What ever you will write it will read  all your content)
 
