@@ -14,7 +14,7 @@ import smtplib  as s                       (The smtplib module defines an SMTP c
 
 Starttls                                   (Now, before invoking login, you invoke starttls. This causes the connection to become encrypted, which, in turn, protects your password                                            against being snooped)
  
-from email.mime.multipart import MIMEMultipart( When anyone send the email , then at the Top proper Sender eamil sender , Receiver email sender and Subject is mentioned )
+from email.mime.multipart import MIMEMultipart( When anyone send the email , then at the Top proper Sender email sender , Receiver email sender and Subject is mentioned to receiver side)
 
 from email.mime.text import MIMEText     (For Sending the text (Files ) )
 
