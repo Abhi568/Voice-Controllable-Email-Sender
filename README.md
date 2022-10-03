@@ -2,8 +2,8 @@ This document will describe how to run and what are the libraries are present in
 
 First refer to this vedio to get an idea how this project works (you can send audio,vedio, documents , images)
 
- pic={'jpg':1,'png':1,'gif':1,'jpeg':1}
- file1={'pdf':1,'csv':1,'xps':1,'txt':1,'ppt':1,'docx':1,'py':1,'rar':1,'mp4':1,'mp3':1}
+ It supports the extensions of images, example:'jpg','png','gif','jpeg'}
+ It supports the extensions of files,example :'pdf','csv','xps','txt','ppt','docx','py','rar','mp4','mp3'}
  
  This project supports these many extensions which you can send( it supports other extensions also , which you can explore) but i have used this because these are the common ones.
  
